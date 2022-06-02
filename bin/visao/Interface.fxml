@@ -1,0 +1,1862 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="400.0" prefWidth="600.0" rotateGraphic="true" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visao.InterfaceController">
+  <tabs>
+    <Tab fx:id="TabBotaoJogadores" style="-fx-background-color: #e47ade;" text="Jogadores">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TabPane prefHeight="374.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                      <Tab fx:id="TabBotaoCadastroJogadores" style="-fx-background-color: #e47ade;" text="Cadastro">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #c18ec2;">
+                                 <children>
+                                    <GridPane layoutX="2.0" prefHeight="344.0" prefWidth="600.0">
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints maxHeight="141.59999237060546" minHeight="10.0" prefHeight="78.60000610351562" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="267.1999877929687" minHeight="30.0" prefHeight="264.79999389648435" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <StackPane fx:id="StackCadastroJogadores" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="279.0" prefWidth="700.0" GridPane.rowIndex="1">
+                                             <children>
+                                                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff0f9b" height="254.0" stroke="WHITE" strokeType="INSIDE" width="583.0" />
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite seu nome:" wrappingWidth="179.87543487548828" StackPane.alignment="TOP_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets left="30.0" top="15.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                                <TextField fx:id="TecladoCadastroNomeJogador" maxWidth="-Infinity" prefHeight="26.0" prefWidth="186.0" StackPane.alignment="TOP_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets left="30.0" top="30.0" />
+                                                   </StackPane.margin>
+                                                </TextField>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite uma senha:" wrappingWidth="148.67542266845703" StackPane.alignment="TOP_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets left="280.0" top="15.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                                <TextField fx:id="TecladoCadastroSenhaJogador" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="26.0" prefWidth="186.0" StackPane.alignment="TOP_CENTER">
+                                                   <StackPane.margin>
+                                                      <Insets left="145.0" top="30.0" />
+                                                   </StackPane.margin>
+                                                </TextField>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite sua categoria de game favorita:" wrappingWidth="204.67542266845703" StackPane.alignment="TOP_CENTER">
+                                                   <StackPane.margin>
+                                                      <Insets left="165.0" top="64.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                                <TextField fx:id="TecladoCadastroCategoriaFavJogador" maxWidth="-Infinity" prefHeight="26.0" prefWidth="153.0" StackPane.alignment="CENTER">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="80.0" left="115.0" />
+                                                   </StackPane.margin>
+                                                </TextField>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite sua nacionalidade:" wrappingWidth="206.27545928955078" StackPane.alignment="CENTER_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="25.0" left="30.0" right="5.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                                <TextField fx:id="TecladoCadastroNascionalidadeJogador" maxWidth="-Infinity" prefHeight="26.0" prefWidth="144.0" StackPane.alignment="CENTER_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets left="30.0" top="20.0" />
+                                                   </StackPane.margin>
+                                                </TextField>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite seu e-mail:" wrappingWidth="148.67542266845703" StackPane.alignment="BOTTOM_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="185.0" left="30.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                                <TextField fx:id="TecladoCadastroEmailJogador" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="26.0" prefWidth="202.0" StackPane.alignment="BOTTOM_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="160.0" left="30.0" />
+                                                   </StackPane.margin>
+                                                </TextField>
+                                                <Button fx:id="BotaoCadastrarJogador" mnemonicParsing="false" onAction="#CadastroJogador" style="-fx-background-color: #c18ec2;" text="Concluir Cadastro" textFill="WHITE" StackPane.alignment="BOTTOM_RIGHT">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="50.0" right="300.0" />
+                                                   </StackPane.margin>
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Button>
+                                                <ImageView fitHeight="260.0" fitWidth="197.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="BOTTOM_RIGHT">
+                                                   <image>
+                                                      <Image url="@../../IMG/Mia-removebg-preview%20(1).png" />
+                                                   </image>
+                                                   <StackPane.margin>
+                                                      <Insets right="6.0" />
+                                                   </StackPane.margin>
+                                                </ImageView>
+                                                <TextField fx:id="TecladoCadastroGeneroJogador" maxWidth="-Infinity" prefHeight="26.0" prefWidth="105.0">
+                                                   <StackPane.margin>
+                                                      <Insets left="65.0" top="25.0" />
+                                                   </StackPane.margin>
+                                                </TextField>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite seu gênero:" wrappingWidth="148.67542266845703">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="15.0" left="110.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                             </children>
+                                          </StackPane>
+                                          <StackPane fx:id="StackTopoJogadores1" prefHeight="150.0" prefWidth="200.0">
+                                             <children>
+                                                <Rectangle arcHeight="5.0" arcWidth="5.0" height="81.0" stroke="WHITE" strokeLineCap="ROUND" strokeType="INSIDE" width="413.0">
+                                                   <fill>
+                                                      <LinearGradient endX="1.0" endY="1.0" startX="0.28787878878188855">
+                                                         <stops>
+                                                            <Stop>
+                                                               <color>
+                                                                  <Color red="0.6947368383407593" green="0.2959064245223999" blue="0.6880896687507629" />
+                                                               </color>
+                                                            </Stop>
+                                                            <Stop offset="0.19455275906888816">
+                                                               <color>
+                                                                  <Color red="0.7568627595901489" green="0.5568627715110779" blue="0.7607843279838562" />
+                                                               </color>
+                                                            </Stop>
+                                                            <Stop offset="1.0">
+                                                               <color>
+                                                                  <Color red="1.0" green="0.05882352963089943" blue="0.6078431606292725" />
+                                                               </color>
+                                                            </Stop>
+                                                         </stops>
+                                                      </LinearGradient>
+                                                   </fill>
+                                                </Rectangle>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastro de Jogadores" wrappingWidth="231.7366193830967" StackPane.alignment="CENTER">
+                                                   <font>
+                                                      <Font name="Eras Bold ITC" size="20.0" />
+                                                   </font>
+                                                   <StackPane.margin>
+                                                      <Insets top="40.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Maximus Games" StackPane.alignment="TOP_CENTER">
+                                                   <font>
+                                                      <Font name="Jokerman" size="36.0" />
+                                                   </font>
+                                                   <StackPane.margin>
+                                                      <Insets bottom="35.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                             </children>
+                                          </StackPane>
+                                          <StackPane fx:id="StackCadastroFinalJogadores" prefHeight="150.0" prefWidth="200.0" visible="false" GridPane.rowIndex="1">
+                                             <children>
+                                                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff0f9b" height="254.0" stroke="WHITE" strokeType="INSIDE" width="583.0" />
+                                                <ImageView fitHeight="253.0" fitWidth="538.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER_LEFT">
+                                                   <image>
+                                                      <Image url="@../../IMG/Purple_Lace-removebg-preview.png" />
+                                                   </image>
+                                                   <StackPane.margin>
+                                                      <Insets left="10.0" />
+                                                   </StackPane.margin></ImageView>
+                                                <Button fx:id="BotaoNovoCadastroJogador" mnemonicParsing="false" onAction="#RealizarNovoCadastroJogador" style="-fx-background-color: #c18ec2;" text="Realizar novo cadastro" textFill="WHITE" StackPane.alignment="BOTTOM_RIGHT">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="20.0" right="40.0" />
+                                                   </StackPane.margin>
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Button>
+                                                <Text fx:id="CadastroErroAcertoJogador" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastro realizado com sucesso!" textAlignment="CENTER" wrappingWidth="256.8476867675781" StackPane.alignment="CENTER">
+                                                   <font>
+                                                      <Font name="Bernard MT Condensed" size="34.0" />
+                                                   </font>
+                                                   <StackPane.margin>
+                                                      <Insets left="90.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                             </children>
+                                          </StackPane>
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                      <Tab fx:id="TabBotaoAlteracaoJogadores" style="-fx-background-color: #e47ade;" text="Alteração">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #c18ec2;">
+                                 <children>
+                                    <GridPane prefHeight="344.0" prefWidth="600.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="141.59999237060546" minHeight="10.0" prefHeight="78.60000610351562" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="267.1999877929687" minHeight="30.0" prefHeight="264.79999389648435" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <StackPane fx:id="StackAlteracaoJogadores" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="279.0" prefWidth="700.0" GridPane.rowIndex="1">
+                                             <children>
+                                                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff0f9b" height="254.0" stroke="WHITE" strokeType="INSIDE" width="583.0" />
+                                                <Text fill="WHITE" layoutX="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite seu ID:" wrappingWidth="243.07538604736328" StackPane.alignment="TOP_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets left="30.0" top="60.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                                <TextField fx:id="TecladoAlteracaoEmailJogador" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="26.0" prefWidth="170.0" StackPane.alignment="TOP_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets left="30.0" top="80.0" />
+                                                   </StackPane.margin>
+                                                </TextField>
+                                                <Button fx:id="BotaoAlterarJogador" mnemonicParsing="false" onAction="#AlterarCadastroJogadores" style="-fx-background-color: #c18ec2;" text="Alterar" textFill="WHITE" StackPane.alignment="BOTTOM_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="100.0" left="90.0" />
+                                                   </StackPane.margin>
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Button>
+                                                <ImageView fitHeight="262.0" fitWidth="386.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="BOTTOM_RIGHT">
+                                                   <image>
+                                                      <Image url="@../../IMG/%23freetoedit%20%23fortnite%20%23controller%20(2).png" />
+                                                   </image>
+                                                   <StackPane.margin>
+                                                      <Insets right="6.0" />
+                                                   </StackPane.margin>
+                                                </ImageView>
+                                                <Text fx:id="AlteracaoErroJogadores" strokeType="OUTSIDE" strokeWidth="0.0" text=" " visible="false" wrappingWidth="187.73675537109375" StackPane.alignment="BOTTOM_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="50.0" left="60.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                             </children>
+                                          </StackPane>
+                                          <StackPane fx:id="StackTopoJogadores2" prefHeight="150.0" prefWidth="200.0">
+                                             <children>
+                                                <Rectangle arcHeight="5.0" arcWidth="5.0" height="81.0" stroke="WHITE" strokeLineCap="ROUND" strokeType="INSIDE" width="413.0">
+                                                   <fill>
+                                                      <LinearGradient endX="1.0" endY="1.0" startX="0.28787878878188855">
+                                                         <stops>
+                                                            <Stop>
+                                                               <color>
+                                                                  <Color red="0.6947368383407593" green="0.2959064245223999" blue="0.6880896687507629" />
+                                                               </color>
+                                                            </Stop>
+                                                            <Stop offset="0.1945527590688881">
+                                                               <color>
+                                                                  <Color red="0.7568627595901489" green="0.5568627715110779" blue="0.7607843279838562" />
+                                                               </color>
+                                                            </Stop>
+                                                            <Stop offset="1.0">
+                                                               <color>
+                                                                  <Color red="1.0" green="0.05882352963089943" blue="0.6078431606292725" />
+                                                               </color>
+                                                            </Stop>
+                                                         </stops>
+                                                      </LinearGradient>
+                                                   </fill>
+                                                </Rectangle>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Alteração de Jogadores" wrappingWidth="242.93670025467873" StackPane.alignment="CENTER">
+                                                   <font>
+                                                      <Font name="Eras Bold ITC" size="20.0" />
+                                                   </font>
+                                                   <StackPane.margin>
+                                                      <Insets top="40.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Maximus Games" StackPane.alignment="TOP_CENTER">
+                                                   <font>
+                                                      <Font name="Jokerman" size="36.0" />
+                                                   </font>
+                                                   <StackPane.margin>
+                                                      <Insets bottom="35.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                             </children>
+                                          </StackPane>
+                                          <StackPane fx:id="StackAlteracaoFinalJogadores" prefHeight="150.0" prefWidth="200.0" visible="false" GridPane.rowIndex="1">
+                                             <children>
+                                                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff0f9b" height="254.0" stroke="WHITE" strokeType="INSIDE" width="583.0" />
+                                                <ImageView fitHeight="253.0" fitWidth="215.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER_LEFT">
+                                                   <image>
+                                                      <Image url="@../../IMG/baixados__10_-removebg-preview.png" />
+                                                   </image>
+                                                   <StackPane.margin>
+                                                      <Insets left="10.0" />
+                                                   </StackPane.margin>
+                                                </ImageView>
+                                                <Button fx:id="BotaoNovaAlteracaoJogador" mnemonicParsing="false" onAction="#NovaAlteracaoCadastroJogadores" style="-fx-background-color: #c18ec2;" text="Realizar nova alteração" textFill="WHITE" StackPane.alignment="BOTTOM_RIGHT">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="20.0" right="40.0" />
+                                                   </StackPane.margin>
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Button>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Alteração realizada com sucesso!" textAlignment="CENTER" wrappingWidth="256.8476867675781" StackPane.alignment="CENTER">
+                                                   <font>
+                                                      <Font name="Bernard MT Condensed" size="34.0" />
+                                                   </font>
+                                                   <StackPane.margin>
+                                                      <Insets left="90.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                             </children>
+                                          </StackPane>
+                                          <StackPane fx:id="StackRealizarAlteracaoJogadores" prefHeight="150.0" prefWidth="200.0" visible="false" GridPane.rowIndex="1">
+                                             <children>
+                                                <StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="279.0" prefWidth="700.0">
+                                                   <children>
+                                                      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff0f9b" height="254.0" stroke="WHITE" strokeType="INSIDE" width="583.0" />
+                                                      <Text fill="WHITE" layoutX="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite um novo nome:" wrappingWidth="148.67542266845703" StackPane.alignment="TOP_LEFT">
+                                                         <StackPane.margin>
+                                                            <Insets left="30.0" top="15.0" />
+                                                         </StackPane.margin>
+                                                      </Text>
+                                                      <TextField fx:id="TecladoAlteracaoNovoNomeJogador" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="26.0" prefWidth="184.0" StackPane.alignment="TOP_LEFT">
+                                                         <StackPane.margin>
+                                                            <Insets left="30.0" top="30.0" />
+                                                         </StackPane.margin>
+                                                      </TextField>
+                                                      <TextField fx:id="TecladoAlteracaoNovoEmailJogador" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="26.0" prefWidth="202.0" StackPane.alignment="CENTER_LEFT">
+                                                         <StackPane.margin>
+                                                            <Insets bottom="80.0" left="30.0" />
+                                                         </StackPane.margin>
+                                                      </TextField>
+                                                      <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite um novo e-mail: " wrappingWidth="179.87543487548828" StackPane.alignment="TOP_LEFT">
+                                                         <StackPane.margin>
+                                                            <Insets left="30.0" top="65.0" />
+                                                         </StackPane.margin>
+                                                      </Text>
+                                                      <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite sua categoria de game favorita:" wrappingWidth="202.27539825439453" StackPane.alignment="TOP_LEFT">
+                                                         <StackPane.margin>
+                                                            <Insets left="280.0" top="15.0" />
+                                                         </StackPane.margin>
+                                                      </Text>
+                                                      <TextField fx:id="TecladoAlteracaoNovaCategoriaFavJogador" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="26.0" prefWidth="138.0" StackPane.alignment="TOP_CENTER">
+                                                         <StackPane.margin>
+                                                            <Insets left="100.0" top="30.0" />
+                                                         </StackPane.margin>
+                                                      </TextField>
+                                                      <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite sua nacionalidade:" wrappingWidth="204.67542266845703" StackPane.alignment="TOP_CENTER">
+                                                         <StackPane.margin>
+                                                            <Insets left="165.0" top="64.0" />
+                                                         </StackPane.margin>
+                                                      </Text>
+                                                      <TextField fx:id="TecladoAlteracaoNovaNacionalidadeJogador" maxWidth="-Infinity" prefHeight="26.0" prefWidth="154.0" StackPane.alignment="CENTER">
+                                                         <StackPane.margin>
+                                                            <Insets bottom="80.0" left="115.0" />
+                                                         </StackPane.margin>
+                                                      </TextField>
+                                                      <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite seu gênero:" wrappingWidth="206.27545928955078" StackPane.alignment="CENTER">
+                                                         <StackPane.margin>
+                                                            <Insets bottom="25.0" left="170.0" right="5.0" />
+                                                         </StackPane.margin>
+                                                      </Text>
+                                                      <TextField fx:id="TecladoAlteracaoNovoGeneroJogador" maxWidth="-Infinity" prefHeight="26.0" prefWidth="103.0" StackPane.alignment="CENTER_LEFT">
+                                                         <StackPane.margin>
+                                                            <Insets left="280.0" top="20.0" />
+                                                         </StackPane.margin>
+                                                      </TextField>
+                                                      <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite uma nova senha:" wrappingWidth="148.67542266845703" StackPane.alignment="CENTER_LEFT">
+                                                         <StackPane.margin>
+                                                            <Insets bottom="40.0" left="30.0" top="15.0" />
+                                                         </StackPane.margin>
+                                                      </Text>
+                                                      <TextField fx:id="TecladoAlteracaoNovaSenhaJogador" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="26.0" prefWidth="202.0" StackPane.alignment="CENTER_LEFT">
+                                                         <StackPane.margin>
+                                                            <Insets left="30.0" top="20.0" />
+                                                         </StackPane.margin>
+                                                      </TextField>
+                                                      <Button fx:id="BotaoConcluirAlteracaoJogador" mnemonicParsing="false" onAction="#ConcluirAlteracaoJogador" style="-fx-background-color: #c18ec2;" text="Concluir alteração" textFill="WHITE" StackPane.alignment="BOTTOM_RIGHT">
+                                                         <StackPane.margin>
+                                                            <Insets bottom="60.0" right="270.0" />
+                                                         </StackPane.margin>
+                                                         <font>
+                                                            <Font name="System Bold" size="12.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <ImageView fitHeight="258.0" fitWidth="214.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="BOTTOM_RIGHT">
+                                                         <image>
+                                                            <Image url="@../../IMG/Garena%20Free%20Fire_%20Game%20bắn%20súng%20sinh%20tồn%20hot%20nhất%20trên%20điện%20thoại!.png" />
+                                                         </image>
+                                                         <StackPane.margin>
+                                                            <Insets right="9.0" />
+                                                         </StackPane.margin>
+                                                      </ImageView>
+                                                   </children>
+                                                </StackPane>
+                                             </children>
+                                          </StackPane>
+                                       </children>
+                                    </GridPane>
+                                 </children></AnchorPane>
+                        </content>
+                      </Tab>
+                        <Tab fx:id="TabBotaoExclusaoJogadores" style="-fx-background-color: #e47ade;" text="Exclusão">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #c18ec2;">
+                                 <children>
+                                    <GridPane prefHeight="344.0" prefWidth="600.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="141.59999237060546" minHeight="10.0" prefHeight="78.60000610351562" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="267.1999877929687" minHeight="30.0" prefHeight="264.79999389648435" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <StackPane fx:id="StackExclusaoJogadores" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="279.0" prefWidth="700.0" GridPane.rowIndex="1">
+                                             <children>
+                                                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff0f9b" height="254.0" stroke="WHITE" strokeType="INSIDE" width="583.0" />
+                                                <Text fill="WHITE" layoutX="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite seu ID:" wrappingWidth="148.67542266845703" StackPane.alignment="TOP_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets left="30.0" top="60.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                                <TextField fx:id="TecladoExclusaoEmailJogador" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="26.0" prefWidth="222.0" StackPane.alignment="TOP_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets left="30.0" top="80.0" />
+                                                   </StackPane.margin>
+                                                </TextField>
+                                                <Button fx:id="BotaoExcluirJogador" mnemonicParsing="false" onAction="#ExclusaoCadastroJogador" style="-fx-background-color: #c18ec2;" text="Excluir" textFill="WHITE" StackPane.alignment="BOTTOM_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="100.0" left="90.0" />
+                                                   </StackPane.margin>
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Button>
+                                                <ImageView fitHeight="259.0" fitWidth="351.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="BOTTOM_RIGHT">
+                                                   <image>
+                                                      <Image url="@../../IMG/freetoedit%20ruby%20fortnite%20sticker%20by%20@skullo_3x.png" />
+                                                   </image>
+                                                   <StackPane.margin>
+                                                      <Insets right="6.0" />
+                                                   </StackPane.margin>
+                                                </ImageView>
+                                                <Text fx:id="ExclusaoErroJogadores" strokeType="OUTSIDE" strokeWidth="0.0" visible="false" wrappingWidth="175.19995737075806" StackPane.alignment="BOTTOM_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="50.0" left="50.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                             </children>
+                                          </StackPane>
+                                          <StackPane fx:id="StackTopoJogadores3" prefHeight="150.0" prefWidth="200.0">
+                                             <children>
+                                                <Rectangle arcHeight="5.0" arcWidth="5.0" height="81.0" stroke="WHITE" strokeLineCap="ROUND" strokeType="INSIDE" width="413.0">
+                                                   <fill>
+                                                      <LinearGradient endX="1.0" endY="1.0" startX="0.28787878878188855">
+                                                         <stops>
+                                                            <Stop>
+                                                               <color>
+                                                                  <Color red="0.6947368383407593" green="0.2959064245223999" blue="0.6880896687507629" />
+                                                               </color>
+                                                            </Stop>
+                                                            <Stop offset="0.1945527590688881">
+                                                               <color>
+                                                                  <Color red="0.7568627595901489" green="0.5568627715110779" blue="0.7607843279838562" />
+                                                               </color>
+                                                            </Stop>
+                                                            <Stop offset="1.0">
+                                                               <color>
+                                                                  <Color red="1.0" green="0.05882352963089943" blue="0.6078431606292725" />
+                                                               </color>
+                                                            </Stop>
+                                                         </stops>
+                                                      </LinearGradient>
+                                                   </fill>
+                                                </Rectangle>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Exclusão de Jogadores" textAlignment="JUSTIFY" wrappingWidth="230.93665447831154" StackPane.alignment="CENTER">
+                                                   <font>
+                                                      <Font name="Eras Bold ITC" size="20.0" />
+                                                   </font>
+                                                   <StackPane.margin>
+                                                      <Insets top="40.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Maximus Games" StackPane.alignment="TOP_CENTER">
+                                                   <font>
+                                                      <Font name="Jokerman" size="36.0" />
+                                                   </font>
+                                                   <StackPane.margin>
+                                                      <Insets bottom="35.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                             </children>
+                                          </StackPane>
+                                          <StackPane fx:id="StackExclusaoFinalJogadores" prefHeight="150.0" prefWidth="200.0" visible="false" GridPane.rowIndex="1">
+                                             <children>
+                                                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff0f9b" height="254.0" stroke="WHITE" strokeType="INSIDE" width="583.0" />
+                                                <ImageView fitHeight="253.0" fitWidth="538.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER_LEFT">
+                                                   <image>
+                                                      <Image url="@../../IMG/Purple_Lace-removebg-preview.png" />
+                                                   </image>
+                                                   <StackPane.margin>
+                                                      <Insets left="10.0" />
+                                                   </StackPane.margin>
+                                                </ImageView>
+                                                <Button fx:id="BotaoNovaExclusaoJogador" mnemonicParsing="false" onAction="#NovaExclusaoCadastroJogador" style="-fx-background-color: #c18ec2;" text="Realizar nova exclusão" textFill="WHITE" StackPane.alignment="BOTTOM_RIGHT">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="20.0" right="40.0" />
+                                                   </StackPane.margin>
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Button>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Exclusão realizada com sucesso!" textAlignment="CENTER" wrappingWidth="256.8476867675781" StackPane.alignment="CENTER">
+                                                   <font>
+                                                      <Font name="Bernard MT Condensed" size="34.0" />
+                                                   </font>
+                                                   <StackPane.margin>
+                                                      <Insets left="90.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                             </children>
+                                          </StackPane>
+                                       </children>
+                                    </GridPane>
+                                 </children></AnchorPane>
+                          </content>
+                        </Tab>
+                        <Tab fx:id="TabBotaoBuscaJogadores" style="-fx-background-color: #e47ade;" text="Busca">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #c18ec2;">
+                                 <children>
+                                    <GridPane prefHeight="344.0" prefWidth="600.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="141.59999237060546" minHeight="10.0" prefHeight="78.60000610351562" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="267.1999877929687" minHeight="30.0" prefHeight="264.79999389648435" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <StackPane fx:id="StackBuscaJogadores" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="279.0" prefWidth="700.0" GridPane.rowIndex="1">
+                                             <children>
+                                                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff0f9b" height="254.0" stroke="WHITE" strokeType="INSIDE" width="583.0" />
+                                                <ImageView fitHeight="273.0" fitWidth="455.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="BOTTOM_RIGHT">
+                                                   <image>
+                                                      <Image url="@../../IMG/baixados__11_-removebg-preview%20(1).png" />
+                                                   </image>
+                                                   <StackPane.margin>
+                                                      <Insets right="9.0" />
+                                                   </StackPane.margin>
+                                                </ImageView>
+                                                <Text fill="WHITE" layoutX="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite o ID do jogador para realizar busca:" wrappingWidth="282.2754592895508" StackPane.alignment="CENTER_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="100.0" left="30.0" top="15.0" />
+                                                   </StackPane.margin>
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Text>
+                                                <TextField fx:id="TecladoBuscaNicknameJogador" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="26.0" prefWidth="270.0" StackPane.alignment="CENTER_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="56.0" left="30.0" top="30.0" />
+                                                   </StackPane.margin>
+                                                </TextField>
+                                                <Text fx:id="BuscaErroJogadores" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="206.3999695777893" StackPane.alignment="BOTTOM_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="30.0" left="30.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                                <Button fx:id="botao" mnemonicParsing="false" style="-fx-background-color: #c18ec2;" text="Buscar" textFill="WHITE" StackPane.alignment="BOTTOM_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="85.0" left="130.0" />
+                                                   </StackPane.margin>
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font></Button>
+                                             </children>
+                                          </StackPane>
+                                          <StackPane fx:id="StackTopoJogadores4" prefHeight="150.0" prefWidth="200.0">
+                                             <children>
+                                                <Rectangle arcHeight="5.0" arcWidth="5.0" height="81.0" stroke="WHITE" strokeLineCap="ROUND" strokeType="INSIDE" width="413.0">
+                                                   <fill>
+                                                      <LinearGradient endX="1.0" endY="1.0" startX="0.28787878878188855">
+                                                         <stops>
+                                                            <Stop>
+                                                               <color>
+                                                                  <Color red="0.6947368383407593" green="0.2959064245223999" blue="0.6880896687507629" />
+                                                               </color>
+                                                            </Stop>
+                                                            <Stop offset="0.1945527590688881">
+                                                               <color>
+                                                                  <Color red="0.7568627595901489" green="0.5568627715110779" blue="0.7607843279838562" />
+                                                               </color>
+                                                            </Stop>
+                                                            <Stop offset="1.0">
+                                                               <color>
+                                                                  <Color red="1.0" green="0.05882352963089943" blue="0.6078431606292725" />
+                                                               </color>
+                                                            </Stop>
+                                                         </stops>
+                                                      </LinearGradient>
+                                                   </fill>
+                                                </Rectangle>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Busca de Jogadores" wrappingWidth="200.53675213456154" StackPane.alignment="CENTER">
+                                                   <font>
+                                                      <Font name="Eras Bold ITC" size="20.0" />
+                                                   </font>
+                                                   <StackPane.margin>
+                                                      <Insets top="40.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Maximus Games" StackPane.alignment="TOP_CENTER">
+                                                   <font>
+                                                      <Font name="Jokerman" size="36.0" />
+                                                   </font>
+                                                   <StackPane.margin>
+                                                      <Insets bottom="35.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                             </children>
+                                          </StackPane>
+                                          <StackPane fx:id="StackBuscaFinalJogadores" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="279.0" prefWidth="700.0" visible="false" GridPane.rowIndex="1">
+                                             <children>
+                                                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff0f9b" height="254.0" stroke="WHITE" strokeType="INSIDE" width="583.0" />
+                                                <TableView fx:id="TableBuscaJogadores" maxHeight="140.0" maxWidth="550.0" minHeight="150.0" prefHeight="201.0" prefWidth="450.0" style="-fx-background-color: #c18ec2;">
+                                                   <columns>
+                                                      <TableColumn fx:id="TableBuscaIDJogadores" prefWidth="63.19997864961624" text="ID" />
+                                                      <TableColumn fx:id="TableBuscaNomeJogadores" prefWidth="116.79998397827148" text="Nome" />
+                                                      <TableColumn fx:id="TableBuscaGeneroJogadores" minWidth="4.800048828125" prefWidth="73.60003662109375" text="Gênero" />
+                                                      <TableColumn fx:id="TableBuscaNascionalidadeJogadores" prefWidth="91.199951171875" text="Nacionalidade" />
+                                                      <TableColumn fx:id="TableBuscaEmailJogadores" prefWidth="128.7999267578125" text="E-mail" />
+                                                      <TableColumn fx:id="TableBuscaCategoriaFavJogadores" prefWidth="80.800048828125" text="Categ. Fav." />
+                                                   </columns>
+                                                   <StackPane.margin>
+                                                      <Insets bottom="30.0" />
+                                                   </StackPane.margin>
+                                                </TableView>
+                                                <Button fx:id="BotaoNovaBuscaJogador" mnemonicParsing="false" onAction="#NovaBuscaCadastroJogador" style="-fx-background-color: #c18ec2;" text="Realizar outra busca" textFill="WHITE" StackPane.alignment="BOTTOM_CENTER">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                   <StackPane.margin>
+                                                      <Insets bottom="30.0" />
+                                                   </StackPane.margin>
+                                                </Button>
+                                             </children>
+                                          </StackPane>
+                                       </children>
+                                    </GridPane>
+                                 </children></AnchorPane>
+                          </content>
+                        </Tab>
+                    </tabs>
+                  </TabPane>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab fx:id="TabBotaoGames" style="-fx-background-color: #ff0f9b;" text="Games">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TabPane prefHeight="374.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+                     <tabs>
+                        <Tab fx:id="TabBotaoCadastroGames" style="-fx-background-color: #ff0f9b;" text="Cadastro">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #c18ec2;">
+                                 <children>
+                                    <GridPane layoutX="2.0" prefHeight="344.0" prefWidth="600.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="141.59999237060546" minHeight="10.0" prefHeight="78.60000610351562" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="267.1999877929687" minHeight="30.0" prefHeight="264.79999389648435" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <StackPane fx:id="StackCadastroGames" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="279.0" prefWidth="700.0" GridPane.rowIndex="1">
+                                             <children>
+                                                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff0f9b" height="254.0" stroke="WHITE" strokeType="INSIDE" width="583.0" />
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite um nome para o game:" wrappingWidth="179.87543487548828" StackPane.alignment="TOP_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets left="30.0" top="15.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                                <TextField fx:id="TecladoCadastroNomeGame" maxWidth="-Infinity" prefHeight="26.0" prefWidth="154.0" StackPane.alignment="TOP_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets left="30.0" top="30.0" />
+                                                   </StackPane.margin>
+                                                </TextField>
+                                                <TextField fx:id="TecladoCadastroCategoriaGame" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="26.0" prefWidth="167.0" StackPane.alignment="TOP_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets left="30.0" top="85.0" />
+                                                   </StackPane.margin>
+                                                </TextField>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite a categoria do game:" wrappingWidth="179.87543487548828" StackPane.alignment="TOP_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="20.0" left="30.0" top="70.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                                <TextField fx:id="TecladoCadastroFaixaEtariaGame" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="26.0" prefWidth="129.0" StackPane.alignment="TOP_CENTER">
+                                                   <StackPane.margin>
+                                                      <Insets left="40.0" top="30.0" />
+                                                   </StackPane.margin>
+                                                </TextField>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite a faixa etária:" wrappingWidth="179.87543487548828" StackPane.alignment="TOP_CENTER">
+                                                   <StackPane.margin>
+                                                      <Insets left="90.0" top="15.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                                <Button fx:id="BotaoCadastrarGame" mnemonicParsing="false" onAction="#CadastrarGame" style="-fx-background-color: #c18ec2;" text="Concluir Cadastro" textFill="WHITE" StackPane.alignment="BOTTOM_CENTER">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="50.0" right="100.0" />
+                                                   </StackPane.margin>
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Button>
+                                                <ImageView fitHeight="306.0" fitWidth="264.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="BOTTOM_RIGHT">
+                                                   <image>
+                                                      <Image url="@../../IMG/fortnite_girl-removebg-preview22.png" />
+                                                   </image>
+                                                   <StackPane.margin>
+                                                      <Insets right="6.0" />
+                                                   </StackPane.margin>
+                                                </ImageView>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" visible="false" wrappingWidth="260.0000637769699" StackPane.alignment="BOTTOM_CENTER">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="20.0" right="100.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                                <Text fx:id="CadastroErroAcertoGame" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="235.19995737075806" StackPane.alignment="BOTTOM_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="20.0" left="30.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                             </children>
+                                          </StackPane>
+                                          <StackPane fx:id="StackTopoGames1" prefHeight="150.0" prefWidth="200.0">
+                                             <children>
+                                                <Rectangle arcHeight="5.0" arcWidth="5.0" height="81.0" stroke="WHITE" strokeLineCap="ROUND" strokeType="INSIDE" width="413.0">
+                                                   <fill>
+                                                      <LinearGradient endX="1.0" endY="1.0" startX="0.28787878878188855">
+                                                         <stops>
+                                                            <Stop>
+                                                               <color>
+                                                                  <Color red="0.6947368383407593" green="0.2959064245223999" blue="0.6880896687507629" />
+                                                               </color>
+                                                            </Stop>
+                                                            <Stop offset="0.19455275906888816">
+                                                               <color>
+                                                                  <Color red="0.7568627595901489" green="0.5568627715110779" blue="0.7607843279838562" />
+                                                               </color>
+                                                            </Stop>
+                                                            <Stop offset="1.0">
+                                                               <color>
+                                                                  <Color red="1.0" green="0.05882352963089943" blue="0.6078431606292725" />
+                                                               </color>
+                                                            </Stop>
+                                                         </stops>
+                                                      </LinearGradient>
+                                                   </fill>
+                                                </Rectangle>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Maximus Games" StackPane.alignment="CENTER_LEFT">
+                                                   <font>
+                                                      <Font name="Jokerman" size="36.0" />
+                                                   </font>
+                                                   <StackPane.margin>
+                                                      <Insets bottom="35.0" left="150.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastro de Games" wrappingWidth="195.73670330643654" StackPane.alignment="CENTER">
+                                                   <font>
+                                                      <Font name="Eras Bold ITC" size="20.0" />
+                                                   </font>
+                                                   <StackPane.margin>
+                                                      <Insets top="40.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                             </children>
+                                          </StackPane>
+                                          <StackPane fx:id="StackCadastroFinalGames" prefHeight="150.0" prefWidth="200.0" visible="false" GridPane.rowIndex="1">
+                                             <children>
+                                                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff0f9b" height="254.0" stroke="WHITE" strokeType="INSIDE" width="583.0" />
+                                                <ImageView fitHeight="253.0" fitWidth="538.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER_LEFT">
+                                                   <image>
+                                                      <Image url="@../../IMG/Purple_Lace-removebg-preview.png" />
+                                                   </image>
+                                                   <StackPane.margin>
+                                                      <Insets left="10.0" />
+                                                   </StackPane.margin>
+                                                </ImageView>
+                                                <Button fx:id="BotaoNovoCadastroGame" mnemonicParsing="false" onAction="#NovoCadastrarGame" style="-fx-background-color: #c18ec2;" text="Realizar novo cadastro" textFill="WHITE" StackPane.alignment="BOTTOM_RIGHT">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="20.0" right="40.0" />
+                                                   </StackPane.margin>
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Button>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastro realizado com sucesso!" textAlignment="CENTER" wrappingWidth="256.8476867675781" StackPane.alignment="CENTER">
+                                                   <font>
+                                                      <Font name="Bernard MT Condensed" size="34.0" />
+                                                   </font>
+                                                   <StackPane.margin>
+                                                      <Insets left="90.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                             </children>
+                                          </StackPane>
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab fx:id="TabBotaoAlteracaoGames" style="-fx-background-color: #ff0f9b;" text="Alteração">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #c18ec2;">
+                                 <children>
+                                    <GridPane prefHeight="344.0" prefWidth="600.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="141.59999237060546" minHeight="10.0" prefHeight="78.60000610351562" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="267.1999877929687" minHeight="30.0" prefHeight="264.79999389648435" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <StackPane fx:id="StackAlteracaoGames" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="279.0" prefWidth="700.0" GridPane.rowIndex="1">
+                                             <children>
+                                                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff0f9b" height="254.0" stroke="WHITE" strokeType="INSIDE" width="583.0" />
+                                                <Text fill="WHITE" layoutX="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite o ID do Game para realizar alteração:" wrappingWidth="269.4754104614258" StackPane.alignment="CENTER_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="100.0" left="30.0" top="15.0" />
+                                                   </StackPane.margin>
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Text>
+                                                <TextField fx:id="TecladoAlteracaoIDGame" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="26.0" prefWidth="270.0" StackPane.alignment="CENTER_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="56.0" left="30.0" top="30.0" />
+                                                   </StackPane.margin>
+                                                </TextField>
+                                                <ImageView fitHeight="256.0" fitWidth="397.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="BOTTOM_RIGHT">
+                                                   <image>
+                                                      <Image url="@../../IMG/baixados__11_-removebg-preview%20(1).png" />
+                                                   </image>
+                                                   <StackPane.margin>
+                                                      <Insets right="9.0" />
+                                                   </StackPane.margin>
+                                                </ImageView>
+                                                <Text fx:id="AlteracaoErroGames" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="235.20001745224" StackPane.alignment="BOTTOM_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="40.0" left="20.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                                <Button fx:id="BotaoAlterarGame" mnemonicParsing="false" onAction="#AlterarCadastroGame" style="-fx-background-color: #c18ec2;" text="Alterar" textFill="WHITE" StackPane.alignment="BOTTOM_LEFT">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                   <StackPane.margin>
+                                                      <Insets bottom="85.0" left="130.0" />
+                                                   </StackPane.margin>
+                                                </Button>
+                                             </children>
+                                          </StackPane>
+                                          <StackPane fx:id="StackTopoGames2" prefHeight="150.0" prefWidth="200.0">
+                                             <children>
+                                                <Rectangle arcHeight="5.0" arcWidth="5.0" height="81.0" stroke="WHITE" strokeLineCap="ROUND" strokeType="INSIDE" width="413.0">
+                                                   <fill>
+                                                      <LinearGradient endX="1.0" endY="1.0" startX="0.28787878878188855">
+                                                         <stops>
+                                                            <Stop>
+                                                               <color>
+                                                                  <Color red="0.6947368383407593" green="0.2959064245223999" blue="0.6880896687507629" />
+                                                               </color>
+                                                            </Stop>
+                                                            <Stop offset="0.1945527590688881">
+                                                               <color>
+                                                                  <Color red="0.7568627595901489" green="0.5568627715110779" blue="0.7607843279838562" />
+                                                               </color>
+                                                            </Stop>
+                                                            <Stop offset="1.0">
+                                                               <color>
+                                                                  <Color red="1.0" green="0.05882352963089943" blue="0.6078431606292725" />
+                                                               </color>
+                                                            </Stop>
+                                                         </stops>
+                                                      </LinearGradient>
+                                                   </fill>
+                                                </Rectangle>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Alteração de Games" wrappingWidth="204.53675213456154" StackPane.alignment="CENTER">
+                                                   <font>
+                                                      <Font name="Eras Bold ITC" size="20.0" />
+                                                   </font>
+                                                   <StackPane.margin>
+                                                      <Insets top="40.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Maximus Games" StackPane.alignment="TOP_CENTER">
+                                                   <font>
+                                                      <Font name="Jokerman" size="36.0" />
+                                                   </font>
+                                                   <StackPane.margin>
+                                                      <Insets bottom="35.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                             </children>
+                                          </StackPane>
+                                          <StackPane fx:id="StackAlteracaoFinalGames" prefHeight="150.0" prefWidth="200.0" visible="false" GridPane.rowIndex="1">
+                                             <children>
+                                                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff0f9b" height="254.0" stroke="WHITE" strokeType="INSIDE" width="583.0" />
+                                                <ImageView fitHeight="253.0" fitWidth="215.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER_LEFT">
+                                                   <image>
+                                                      <Image url="@../../IMG/baixados__10_-removebg-preview.png" />
+                                                   </image>
+                                                   <StackPane.margin>
+                                                      <Insets left="10.0" />
+                                                   </StackPane.margin>
+                                                </ImageView>
+                                                <Button fx:id="BotaoNovaAlteracaoGame" mnemonicParsing="false" onAction="#NovaAlteracaoCadastroGame" style="-fx-background-color: #c18ec2;" text="Realizar nova alteração" textFill="WHITE" StackPane.alignment="BOTTOM_RIGHT">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="20.0" right="40.0" />
+                                                   </StackPane.margin>
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Button>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Alteração realizada com sucesso!" textAlignment="CENTER" wrappingWidth="256.8476867675781" StackPane.alignment="CENTER">
+                                                   <font>
+                                                      <Font name="Bernard MT Condensed" size="34.0" />
+                                                   </font>
+                                                   <StackPane.margin>
+                                                      <Insets left="90.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                             </children>
+                                          </StackPane>
+                                          <StackPane fx:id="StackRealizarAlteracaoGames" prefHeight="150.0" prefWidth="200.0" visible="false" GridPane.rowIndex="1">
+                                             <children>
+                                                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff0f9b" height="254.0" stroke="WHITE" strokeType="INSIDE" width="583.0" />
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite um novo nome:" wrappingWidth="148.67542266845703" StackPane.alignment="TOP_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets left="30.0" top="15.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                                <TextField fx:id="TecladoAltercaoNomeGame" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="26.0" prefWidth="184.0" StackPane.alignment="TOP_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets left="30.0" top="30.0" />
+                                                   </StackPane.margin>
+                                                </TextField>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite a nova categoria do game:" wrappingWidth="198.27545928955078" StackPane.alignment="TOP_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets left="30.0" top="65.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                                <TextField fx:id="TecladoAltercaoCategoriaGame" maxWidth="-Infinity" prefHeight="26.0" prefWidth="174.0" StackPane.alignment="TOP_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets left="30.0" top="80.0" />
+                                                   </StackPane.margin>
+                                                </TextField>
+                                                <TextField fx:id="TecladoAltercaoFaixaEtariaGame" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="26.0" prefWidth="167.0" StackPane.alignment="TOP_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets left="30.0" top="130.0" />
+                                                   </StackPane.margin>
+                                                </TextField>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite a nova faixa etária do game:" wrappingWidth="190.27545928955078" StackPane.alignment="CENTER_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="20.0" left="30.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                                <Button fx:id="BotaoConcluirAlteracaoGame" mnemonicParsing="false" onAction="#ConcluirAlteracaoGame" style="-fx-background-color: #c18ec2;" text="Concluir alteração" textFill="WHITE" StackPane.alignment="BOTTOM_RIGHT">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="60.0" right="190.0" />
+                                                   </StackPane.margin>
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Button>
+                                                <ImageView fitHeight="258.0" fitWidth="214.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="BOTTOM_RIGHT">
+                                                   <image>
+                                                      <Image url="@../../IMG/Garena%20Free%20Fire_%20Game%20bắn%20súng%20sinh%20tồn%20hot%20nhất%20trên%20điện%20thoại!.png" />
+                                                   </image>
+                                                   <StackPane.margin>
+                                                      <Insets right="9.0" />
+                                                   </StackPane.margin>
+                                                </ImageView>
+                                             </children>
+                                          </StackPane>
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab fx:id="TabBotaoExclusaoGames" style="-fx-background-color: #ff0f9b;" text="Exclusão">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #c18ec2;">
+                                 <children>
+                                    <GridPane prefHeight="344.0" prefWidth="600.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="141.59999237060546" minHeight="10.0" prefHeight="78.60000610351562" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="267.1999877929687" minHeight="30.0" prefHeight="264.79999389648435" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <StackPane fx:id="StackTopoGames" prefHeight="150.0" prefWidth="200.0">
+                                             <children>
+                                                <Rectangle arcHeight="5.0" arcWidth="5.0" height="81.0" stroke="WHITE" strokeLineCap="ROUND" strokeType="INSIDE" width="413.0">
+                                                   <fill>
+                                                      <LinearGradient endX="1.0" endY="1.0" startX="0.28787878878188855">
+                                                         <stops>
+                                                            <Stop>
+                                                               <color>
+                                                                  <Color red="0.6947368383407593" green="0.2959064245223999" blue="0.6880896687507629" />
+                                                               </color>
+                                                            </Stop>
+                                                            <Stop offset="0.1945527590688881">
+                                                               <color>
+                                                                  <Color red="0.7568627595901489" green="0.5568627715110779" blue="0.7607843279838562" />
+                                                               </color>
+                                                            </Stop>
+                                                            <Stop offset="1.0">
+                                                               <color>
+                                                                  <Color red="1.0" green="0.05882352963089943" blue="0.6078431606292725" />
+                                                               </color>
+                                                            </Stop>
+                                                         </stops>
+                                                      </LinearGradient>
+                                                   </fill>
+                                                </Rectangle>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Maximus Games" StackPane.alignment="CENTER_LEFT">
+                                                   <font>
+                                                      <Font name="Jokerman" size="36.0" />
+                                                   </font>
+                                                   <StackPane.margin>
+                                                      <Insets bottom="35.0" left="150.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Exclusão de Games" textAlignment="JUSTIFY" wrappingWidth="194.13672772049904" StackPane.alignment="CENTER">
+                                                   <font>
+                                                      <Font name="Eras Bold ITC" size="20.0" />
+                                                   </font>
+                                                   <StackPane.margin>
+                                                      <Insets top="40.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                             </children>
+                                          </StackPane>
+                                          <StackPane fx:id="StackExclusaoFinalGames" prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="1">
+                                             <children>
+                                                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff0f9b" height="254.0" stroke="WHITE" strokeType="INSIDE" width="583.0" />
+                                                <ImageView fitHeight="253.0" fitWidth="538.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER_LEFT">
+                                                   <image>
+                                                      <Image url="@../../IMG/Purple_Lace-removebg-preview.png" />
+                                                   </image>
+                                                   <StackPane.margin>
+                                                      <Insets left="10.0" />
+                                                   </StackPane.margin>
+                                                </ImageView>
+                                                <Button fx:id="BotaoNovaExclusaoGame" mnemonicParsing="false" onAction="#NovaExclusaoGame" style="-fx-background-color: #c18ec2;" text="Realizar nova exclusão" textFill="WHITE" StackPane.alignment="BOTTOM_RIGHT">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="20.0" right="40.0" />
+                                                   </StackPane.margin>
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Button>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Exclusão realizada com sucesso!" textAlignment="CENTER" wrappingWidth="256.8476867675781" StackPane.alignment="CENTER">
+                                                   <font>
+                                                      <Font name="Bernard MT Condensed" size="34.0" />
+                                                   </font>
+                                                   <StackPane.margin>
+                                                      <Insets left="90.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                             </children>
+                                          </StackPane>
+                                          <StackPane fx:id="StackExclusaoGames" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="279.0" prefWidth="700.0" GridPane.rowIndex="1">
+                                             <children>
+                                                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff0f9b" height="254.0" stroke="WHITE" strokeType="INSIDE" width="583.0" />
+                                                <Text fill="WHITE" layoutX="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite o ID do Game para realizar exclusão:" wrappingWidth="269.4754104614258" StackPane.alignment="CENTER_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="100.0" left="30.0" top="15.0" />
+                                                   </StackPane.margin>
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Text>
+                                                <TextField fx:id="TecladoExclusaoIDGame" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="26.0" prefWidth="270.0" StackPane.alignment="CENTER_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="56.0" left="30.0" top="30.0" />
+                                                   </StackPane.margin>
+                                                </TextField>
+                                                <Button fx:id="BotaoExcluirGame" mnemonicParsing="false" onAction="#ConcluirExclusaoGame" style="-fx-background-color: #c18ec2;" text="Concluir Exclusão" textFill="WHITE" StackPane.alignment="BOTTOM_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="85.0" left="100.0" />
+                                                   </StackPane.margin>
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Button>
+                                                <ImageView fitHeight="262.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="BOTTOM_RIGHT">
+                                                   <image>
+                                                      <Image url="@../../IMG/baixados__15_-removebg-preview.png" />
+                                                   </image>
+                                                   <StackPane.margin>
+                                                      <Insets right="9.0" />
+                                                   </StackPane.margin>
+                                                </ImageView>
+                                                <Text fx:id="ExclusaoErroGame" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="259.9999451637268" StackPane.alignment="BOTTOM_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="30.0" left="40.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                             </children>
+                                          </StackPane>
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab fx:id="TabBotaoBuscaGames" style="-fx-background-color: #ff0f9b;" text="Busca">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #c18ec2;">
+                                 <children>
+                                    <GridPane prefHeight="344.0" prefWidth="600.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="141.59999237060546" minHeight="10.0" prefHeight="78.60000610351562" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="267.1999877929687" minHeight="30.0" prefHeight="264.79999389648435" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <StackPane fx:id="StackBuscaGames" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="279.0" prefWidth="700.0" GridPane.rowIndex="1">
+                                             <children>
+                                                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff0f9b" height="254.0" stroke="WHITE" strokeType="INSIDE" width="583.0" />
+                                                <Text fill="WHITE" layoutX="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite o ID do Game para realizar busca:" wrappingWidth="282.2754592895508" StackPane.alignment="CENTER_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="100.0" left="30.0" top="15.0" />
+                                                   </StackPane.margin>
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Text>
+                                                <TextField fx:id="TecladoBuscaIDGame" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="26.0" prefWidth="270.0" StackPane.alignment="CENTER_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="56.0" left="30.0" top="30.0" />
+                                                   </StackPane.margin>
+                                                </TextField>
+                                                <ImageView fitHeight="250.0" fitWidth="425.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="BOTTOM_RIGHT">
+                                                   <image>
+                                                      <Image url="@../../IMG/baixados__11_-removebg-preview%20(1).png" />
+                                                   </image>
+                                                   <StackPane.margin>
+                                                      <Insets right="9.0" />
+                                                   </StackPane.margin>
+                                                </ImageView>
+                                                <Text fx:id="BuscaErroGames" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="237.5999207496643" StackPane.alignment="BOTTOM_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="40.0" left="30.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                                <Button fx:id="BotaoBuscarGame" mnemonicParsing="false" onAction="#BuscarCadastroGame" style="-fx-background-color: #c18ec2;" text="Buscar" textFill="WHITE" StackPane.alignment="CENTER_LEFT">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                   <StackPane.margin>
+                                                      <Insets left="120.0" top="70.0" />
+                                                   </StackPane.margin>
+                                                </Button>
+                                             </children>
+                                          </StackPane>
+                                          <StackPane fx:id="StackTopoGames4" prefHeight="150.0" prefWidth="200.0">
+                                             <children>
+                                                <Rectangle arcHeight="5.0" arcWidth="5.0" height="81.0" stroke="WHITE" strokeLineCap="ROUND" strokeType="INSIDE" width="413.0">
+                                                   <fill>
+                                                      <LinearGradient endX="1.0" endY="1.0" startX="0.28787878878188855">
+                                                         <stops>
+                                                            <Stop>
+                                                               <color>
+                                                                  <Color red="0.6947368383407593" green="0.2959064245223999" blue="0.6880896687507629" />
+                                                               </color>
+                                                            </Stop>
+                                                            <Stop offset="0.1945527590688881">
+                                                               <color>
+                                                                  <Color red="0.7568627595901489" green="0.5568627715110779" blue="0.7607843279838562" />
+                                                               </color>
+                                                            </Stop>
+                                                            <Stop offset="1.0">
+                                                               <color>
+                                                                  <Color red="1.0" green="0.05882352963089943" blue="0.6078431606292725" />
+                                                               </color>
+                                                            </Stop>
+                                                         </stops>
+                                                      </LinearGradient>
+                                                   </fill>
+                                                </Rectangle>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Busca de Games" wrappingWidth="163.7367643415928" StackPane.alignment="CENTER">
+                                                   <font>
+                                                      <Font name="Eras Bold ITC" size="20.0" />
+                                                   </font>
+                                                   <StackPane.margin>
+                                                      <Insets top="40.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Maximus Games" StackPane.alignment="TOP_CENTER">
+                                                   <font>
+                                                      <Font name="Jokerman" size="36.0" />
+                                                   </font>
+                                                   <StackPane.margin>
+                                                      <Insets bottom="35.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                             </children>
+                                          </StackPane>
+                                          <StackPane fx:id="StackBuscaFinalGames" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="279.0" prefWidth="700.0" visible="false" GridPane.rowIndex="1">
+                                             <children>
+                                                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff0f9b" height="254.0" stroke="WHITE" strokeType="INSIDE" width="583.0" />
+                                                <TableView fx:id="TableBuscaGames" maxHeight="130.0" maxWidth="375.0" minHeight="150.0" prefHeight="201.0" prefWidth="450.0" style="-fx-background-color: #c18ec2;">
+                                                  <columns>
+                                                    <TableColumn fx:id="TableBuscaIDGames" prefWidth="75.0" text="ID" />
+                                                    <TableColumn fx:id="TableBuscaNomeGames" prefWidth="124.00006103515625" text="Nome" />
+                                                      <TableColumn fx:id="TableBuscaCategoriaGames" prefWidth="78.40003967285156" text="Categoria" />
+                                                      <TableColumn fx:id="TableBuscaFaixaEtariaGames" prefWidth="92.79998779296875" text="Faixa Etária" />
+                                                  </columns>
+                                                   <StackPane.margin>
+                                                      <Insets bottom="30.0" />
+                                                   </StackPane.margin>
+                                                </TableView>
+                                                <Button fx:id="BotaoNovaBuscaGame" mnemonicParsing="false" onAction="#NovaBuscaCadastroGame" style="-fx-background-color: #c18ec2;" text="Realizar outra busca" textFill="WHITE" StackPane.alignment="BOTTOM_CENTER">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                   <StackPane.margin>
+                                                      <Insets bottom="30.0" />
+                                                   </StackPane.margin>
+                                                </Button>
+                                             </children>
+                                          </StackPane>
+                                       </children>
+                                    </GridPane>
+                                 </children></AnchorPane>
+                           </content>
+                        </Tab>
+                     </tabs>
+                  </TabPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab fx:id="TabBotaoDesenvolvedores" style="-fx-background-color: #956cd9;" text="Desenvolvedores">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TabPane prefHeight="374.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+                     <tabs>
+                        <Tab fx:id="TabBotaoCadastroDesenvolvedores" style="-fx-background-color: #956cd9;" text="Cadastro">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #c18ec2;">
+                                 <children>
+                                    <GridPane layoutX="2.0" prefHeight="344.0" prefWidth="600.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="141.59999237060546" minHeight="10.0" prefHeight="78.60000610351562" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="267.1999877929687" minHeight="30.0" prefHeight="264.79999389648435" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <StackPane fx:id="StackCadastroDesenvolvedores" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="279.0" prefWidth="700.0" GridPane.rowIndex="1">
+                                             <children>
+                                                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff0f9b" height="254.0" stroke="WHITE" strokeType="INSIDE" width="583.0" />
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite o nome do desenvolvedor:" wrappingWidth="179.87543487548828" StackPane.alignment="TOP_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets left="30.0" top="65.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                                <TextField fx:id="TecladoCadastroNomeDesenvolvedor" maxWidth="-Infinity" prefHeight="26.0" prefWidth="166.0" StackPane.alignment="TOP_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets left="30.0" top="80.0" />
+                                                   </StackPane.margin>
+                                                </TextField>
+                                                <TextField fx:id="TecladoCadastroLocalDesenvolvedor" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="26.0" prefWidth="167.0" StackPane.alignment="TOP_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets left="30.0" top="130.0" />
+                                                   </StackPane.margin>
+                                                </TextField>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite o local do desenvolvedor:" wrappingWidth="179.87543487548828" StackPane.alignment="CENTER_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="20.0" left="30.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                                <Button fx:id="BotaoCadastrarDesenvolvedor" mnemonicParsing="false" onAction="#CadastrarDesenvolvedores" style="-fx-background-color: #c18ec2;" text="Cadastrar Desenvolvedor" textFill="WHITE" StackPane.alignment="BOTTOM_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="50.0" left="30.0" />
+                                                   </StackPane.margin>
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Button>
+                                                <ImageView fitHeight="253.0" fitWidth="386.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="BOTTOM_RIGHT">
+                                                   <image>
+                                                      <Image url="@../../IMG/Fortnite_Thumbnails-removebg-preview.png" />
+                                                   </image>
+                                                   <StackPane.margin>
+                                                      <Insets bottom="8.0" right="-10.0" />
+                                                   </StackPane.margin>
+                                                </ImageView>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="257.59998178482056" StackPane.alignment="BOTTOM_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="20.0" left="30.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                             </children>
+                                          </StackPane>
+                                          <StackPane fx:id="StackTopoDesenvolvedores1" prefHeight="150.0" prefWidth="200.0">
+                                             <children>
+                                                <Rectangle arcHeight="5.0" arcWidth="5.0" height="81.0" stroke="WHITE" strokeLineCap="ROUND" strokeType="INSIDE" width="413.0">
+                                                   <fill>
+                                                      <LinearGradient endX="1.0" endY="1.0" startX="0.28787878878188855">
+                                                         <stops>
+                                                            <Stop>
+                                                               <color>
+                                                                  <Color red="0.6947368383407593" green="0.2959064245223999" blue="0.6880896687507629" />
+                                                               </color>
+                                                            </Stop>
+                                                            <Stop offset="0.19455275906888816">
+                                                               <color>
+                                                                  <Color red="0.7568627595901489" green="0.5568627715110779" blue="0.7607843279838562" />
+                                                               </color>
+                                                            </Stop>
+                                                            <Stop offset="1.0">
+                                                               <color>
+                                                                  <Color red="1.0" green="0.05882352963089943" blue="0.6078431606292725" />
+                                                               </color>
+                                                            </Stop>
+                                                         </stops>
+                                                      </LinearGradient>
+                                                   </fill>
+                                                </Rectangle>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastro de Desenvolvedores" wrappingWidth="300.53670635819435" StackPane.alignment="CENTER">
+                                                   <font>
+                                                      <Font name="Eras Bold ITC" size="20.0" />
+                                                   </font>
+                                                   <StackPane.margin>
+                                                      <Insets top="40.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Maximus Games">
+                                                   <font>
+                                                      <Font name="Jokerman" size="36.0" />
+                                                   </font>
+                                                   <StackPane.margin>
+                                                      <Insets bottom="35.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                             </children>
+                                          </StackPane>
+                                          <StackPane fx:id="StackCadastroFinalDesenvolvedores" prefHeight="150.0" prefWidth="200.0" visible="false" GridPane.rowIndex="1">
+                                             <children>
+                                                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff0f9b" height="254.0" stroke="WHITE" strokeType="INSIDE" width="583.0" />
+                                                <ImageView fitHeight="253.0" fitWidth="538.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER_LEFT">
+                                                   <image>
+                                                      <Image url="@../../IMG/Purple_Lace-removebg-preview.png" />
+                                                   </image>
+                                                   <StackPane.margin>
+                                                      <Insets left="10.0" />
+                                                   </StackPane.margin>
+                                                </ImageView>
+                                                <Button fx:id="BotaoNovoCadastroDesenvolvedor" mnemonicParsing="false" onAction="#NovoCadastroDesenvolvedores" style="-fx-background-color: #c18ec2;" text="Realizar novo cadastro" textFill="WHITE" StackPane.alignment="BOTTOM_RIGHT">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="20.0" right="40.0" />
+                                                   </StackPane.margin>
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Button>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastro realizado com sucesso!" textAlignment="CENTER" wrappingWidth="256.8476867675781" StackPane.alignment="CENTER">
+                                                   <font>
+                                                      <Font name="Bernard MT Condensed" size="34.0" />
+                                                   </font>
+                                                   <StackPane.margin>
+                                                      <Insets left="90.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                             </children>
+                                          </StackPane>
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab fx:id="TabBotaoAlteracaoDesenvolvedores" style="-fx-background-color: #956cd9;" text="Alteração">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #c18ec2;">
+                                 <children>
+                                    <GridPane prefHeight="344.0" prefWidth="600.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="141.59999237060546" minHeight="10.0" prefHeight="78.60000610351562" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="267.1999877929687" minHeight="30.0" prefHeight="264.79999389648435" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <StackPane fx:id="StackAlteracaoDesenvolvedores" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="279.0" prefWidth="700.0" GridPane.rowIndex="1">
+                                             <children>
+                                                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff0f9b" height="254.0" stroke="WHITE" strokeType="INSIDE" width="583.0" />
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite o ID do Desenvolvedor para alterar:" wrappingWidth="259.8754348754883" StackPane.alignment="TOP_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets left="30.0" top="80.0" />
+                                                   </StackPane.margin>
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Text>
+                                                <TextField fx:id="TecladoAlteracaoIDDesenvolvedor" maxWidth="-Infinity" prefHeight="26.0" prefWidth="201.0" StackPane.alignment="TOP_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets left="30.0" top="100.0" />
+                                                   </StackPane.margin>
+                                                </TextField>
+                                                <Button fx:id="BotaoAlterarDesenvolvedor" mnemonicParsing="false" onAction="#AlterarCadastroDesenvolvedores" style="-fx-background-color: #c18ec2;" text="Alterar Desenvolvedor" textFill="WHITE" StackPane.alignment="BOTTOM_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="100.0" left="80.0" />
+                                                   </StackPane.margin>
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Button>
+                                                <ImageView fitHeight="259.0" fitWidth="354.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="BOTTOM_RIGHT">
+                                                   <image>
+                                                      <Image url="@../../IMG/baixados__21_-removebg-preview.png" />
+                                                   </image>
+                                                   <StackPane.margin>
+                                                      <Insets />
+                                                   </StackPane.margin>
+                                                </ImageView>
+                                                <Text fx:id="AlteracaoErroDesenvolvedores" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="253.59998106956482" StackPane.alignment="BOTTOM_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="30.0" left="30.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                             </children>
+                                          </StackPane>
+                                          <StackPane fx:id="StackTopoDesenvolvedores" prefHeight="150.0" prefWidth="200.0">
+                                             <children>
+                                                <Rectangle arcHeight="5.0" arcWidth="5.0" height="81.0" stroke="WHITE" strokeLineCap="ROUND" strokeType="INSIDE" width="413.0">
+                                                   <fill>
+                                                      <LinearGradient endX="1.0" endY="1.0" startX="0.28787878878188855">
+                                                         <stops>
+                                                            <Stop>
+                                                               <color>
+                                                                  <Color red="0.6947368383407593" green="0.2959064245223999" blue="0.6880896687507629" />
+                                                               </color>
+                                                            </Stop>
+                                                            <Stop offset="0.1945527590688881">
+                                                               <color>
+                                                                  <Color red="0.7568627595901489" green="0.5568627715110779" blue="0.7607843279838562" />
+                                                               </color>
+                                                            </Stop>
+                                                            <Stop offset="1.0">
+                                                               <color>
+                                                                  <Color red="1.0" green="0.05882352963089943" blue="0.6078431606292725" />
+                                                               </color>
+                                                            </Stop>
+                                                         </stops>
+                                                      </LinearGradient>
+                                                   </fill>
+                                                </Rectangle>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Alteração de Desenvolvedores" textAlignment="JUSTIFY" wrappingWidth="309.3367399275303" StackPane.alignment="CENTER">
+                                                   <font>
+                                                      <Font name="Eras Bold ITC" size="20.0" />
+                                                   </font>
+                                                   <StackPane.margin>
+                                                      <Insets top="40.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Maximus Games">
+                                                   <font>
+                                                      <Font name="Jokerman" size="36.0" />
+                                                   </font>
+                                                   <StackPane.margin>
+                                                      <Insets bottom="35.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                             </children>
+                                          </StackPane>
+                                          <StackPane fx:id="StackAlteracaoFinalDesenvolvedores" prefHeight="150.0" prefWidth="200.0" visible="false" GridPane.rowIndex="1">
+                                             <children>
+                                                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff0f9b" height="254.0" stroke="WHITE" strokeType="INSIDE" width="583.0" />
+                                                <ImageView fitHeight="253.0" fitWidth="215.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER_LEFT">
+                                                   <image>
+                                                      <Image url="@../../IMG/baixados__10_-removebg-preview.png" />
+                                                   </image>
+                                                   <StackPane.margin>
+                                                      <Insets left="10.0" />
+                                                   </StackPane.margin>
+                                                </ImageView>
+                                                <Button fx:id="BotaoNovaAlteracaoDesenvolvedor" mnemonicParsing="false" onAction="#NovaAlteracaoCadastroDesenvolvedores" style="-fx-background-color: #c18ec2;" text="Realizar nova alteração" textFill="WHITE" StackPane.alignment="BOTTOM_RIGHT">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="20.0" right="40.0" />
+                                                   </StackPane.margin>
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Button>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Alteração realizada com sucesso!" textAlignment="CENTER" wrappingWidth="256.8476867675781" StackPane.alignment="CENTER">
+                                                   <font>
+                                                      <Font name="Bernard MT Condensed" size="34.0" />
+                                                   </font>
+                                                   <StackPane.margin>
+                                                      <Insets left="90.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                             </children>
+                                          </StackPane>
+                                          <StackPane fx:id="StackRealizarAlteracaoDesenvolvedores" prefHeight="150.0" prefWidth="200.0" visible="false" GridPane.rowIndex="1">
+                                             <children>
+                                                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff0f9b" height="254.0" stroke="WHITE" strokeType="INSIDE" width="583.0" />
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite um novo nome:" wrappingWidth="148.67542266845703" StackPane.alignment="TOP_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets left="30.0" top="15.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                                <TextField fx:id="TecladoAlteracaoNovoNomeDesenvolvedor" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="26.0" prefWidth="211.0" StackPane.alignment="TOP_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets left="30.0" top="30.0" />
+                                                   </StackPane.margin>
+                                                </TextField>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite um novo local:" wrappingWidth="198.27545928955078" StackPane.alignment="TOP_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets left="30.0" top="65.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                                <TextField fx:id="TecladoAlteracaoNovoLocalDesenvolvedor" maxWidth="-Infinity" prefHeight="26.0" prefWidth="220.0" StackPane.alignment="TOP_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets left="30.0" top="80.0" />
+                                                   </StackPane.margin>
+                                                </TextField>
+                                                <Button fx:id="BotaoConcluirAlteracaoDesenvolvedor" mnemonicParsing="false" onAction="#ConclusaoAlteracaoDesenvolvedores" style="-fx-background-color: #c18ec2;" text="Concluir alteração" textFill="WHITE" StackPane.alignment="BOTTOM_RIGHT">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="60.0" right="280.0" />
+                                                   </StackPane.margin>
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Button>
+                                                <ImageView fitHeight="258.0" fitWidth="214.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="BOTTOM_RIGHT">
+                                                   <image>
+                                                      <Image url="@../../IMG/Garena%20Free%20Fire_%20Game%20bắn%20súng%20sinh%20tồn%20hot%20nhất%20trên%20điện%20thoại!.png" />
+                                                   </image>
+                                                   <StackPane.margin>
+                                                      <Insets right="9.0" />
+                                                   </StackPane.margin>
+                                                </ImageView>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" visible="false" wrappingWidth="240.53667831420898" StackPane.alignment="BOTTOM_CENTER">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="20.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                             </children>
+                                          </StackPane>
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab fx:id="TabBotaoExclusaoDesenvolvedores" style="-fx-background-color: #956cd9;" text="Exclusão">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #c18ec2;">
+                                 <children>
+                                    <GridPane prefHeight="344.0" prefWidth="600.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="141.59999237060546" minHeight="10.0" prefHeight="78.60000610351562" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="267.1999877929687" minHeight="30.0" prefHeight="264.79999389648435" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <StackPane fx:id="StackExclusaoDesenvolvedores" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="279.0" prefWidth="700.0" GridPane.rowIndex="1">
+                                             <children>
+                                                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff0f9b" height="254.0" stroke="WHITE" strokeType="INSIDE" width="583.0" />
+                                                <TextField fx:id="TecladoExclusaoIDDesenvolvedor" maxWidth="-Infinity" prefHeight="26.0" prefWidth="246.0" StackPane.alignment="TOP_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets left="260.0" top="100.0" />
+                                                   </StackPane.margin>
+                                                </TextField>
+                                                <Button fx:id="BotaoExcluirDesenvolvedor" mnemonicParsing="false" onAction="#ExclusaoCadastroDesenvolvedores" style="-fx-background-color: #c18ec2;" text="Excluir Desenvolvedor" textFill="WHITE" StackPane.alignment="BOTTOM_RIGHT">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="100.0" right="160.0" />
+                                                   </StackPane.margin>
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Button>
+                                                <ImageView fitHeight="269.0" fitWidth="286.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="BOTTOM_LEFT">
+                                                   <image>
+                                                      <Image url="@../../IMG/baixados__6_-removebg-preview.png" />
+                                                   </image>
+                                                   <StackPane.margin>
+                                                      <Insets left="10.0" right="6.0" />
+                                                   </StackPane.margin>
+                                                </ImageView>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite o ID do Game para realizar exclusão:" wrappingWidth="256.67542266845703" StackPane.alignment="TOP_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets left="260.0" top="80.0" />
+                                                   </StackPane.margin>
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fx:id="ExclusaoErroDesenvolvedores" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="297.59999561309814" StackPane.alignment="BOTTOM_RIGHT">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="30.0" right="40.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                             </children>
+                                          </StackPane>
+                                          <StackPane fx:id="StackTopoDesenvolvedores3" prefHeight="150.0" prefWidth="200.0">
+                                             <children>
+                                                <Rectangle arcHeight="5.0" arcWidth="5.0" height="81.0" stroke="WHITE" strokeLineCap="ROUND" strokeType="INSIDE" width="413.0">
+                                                   <fill>
+                                                      <LinearGradient endX="1.0" endY="1.0" startX="0.28787878878188855">
+                                                         <stops>
+                                                            <Stop>
+                                                               <color>
+                                                                  <Color red="0.6947368383407593" green="0.2959064245223999" blue="0.6880896687507629" />
+                                                               </color>
+                                                            </Stop>
+                                                            <Stop offset="0.1945527590688881">
+                                                               <color>
+                                                                  <Color red="0.7568627595901489" green="0.5568627715110779" blue="0.7607843279838562" />
+                                                               </color>
+                                                            </Stop>
+                                                            <Stop offset="1.0">
+                                                               <color>
+                                                                  <Color red="1.0" green="0.05882352963089943" blue="0.6078431606292725" />
+                                                               </color>
+                                                            </Stop>
+                                                         </stops>
+                                                      </LinearGradient>
+                                                   </fill>
+                                                   <StackPane.margin>
+                                                      <Insets top="5.0" />
+                                                   </StackPane.margin>
+                                                </Rectangle>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Exclusão de Desenvolvedores" textAlignment="JUSTIFY" wrappingWidth="299.73670330643654" StackPane.alignment="CENTER">
+                                                   <font>
+                                                      <Font name="Eras Bold ITC" size="20.0" />
+                                                   </font>
+                                                   <StackPane.margin>
+                                                      <Insets top="40.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Maximus Games">
+                                                   <font>
+                                                      <Font name="Jokerman" size="36.0" />
+                                                   </font>
+                                                   <StackPane.margin>
+                                                      <Insets bottom="30.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                             </children>
+                                          </StackPane>
+                                          <StackPane fx:id="StackExclusaoFinalDesenvolvedores" prefHeight="150.0" prefWidth="200.0" visible="false" GridPane.rowIndex="1">
+                                             <children>
+                                                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff0f9b" height="254.0" stroke="WHITE" strokeType="INSIDE" width="583.0" />
+                                                <ImageView fitHeight="253.0" fitWidth="538.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER_LEFT">
+                                                   <image>
+                                                      <Image url="@../../IMG/Purple_Lace-removebg-preview.png" />
+                                                   </image>
+                                                   <StackPane.margin>
+                                                      <Insets left="10.0" />
+                                                   </StackPane.margin>
+                                                </ImageView>
+                                                <Button fx:id="BotaoNovaExclusaoDesenvolvedor" mnemonicParsing="false" onAction="#NovaExclusaoCadastroDesenvolvedores" style="-fx-background-color: #c18ec2;" text="Realizar nova exclusão" textFill="WHITE" StackPane.alignment="BOTTOM_RIGHT">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="20.0" right="40.0" />
+                                                   </StackPane.margin>
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Button>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Exclusão realizada com sucesso!" textAlignment="CENTER" wrappingWidth="256.8476867675781" StackPane.alignment="CENTER">
+                                                   <font>
+                                                      <Font name="Bernard MT Condensed" size="34.0" />
+                                                   </font>
+                                                   <StackPane.margin>
+                                                      <Insets left="90.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                             </children>
+                                          </StackPane>
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab fx:id="TabBotaoBuscaDesenvolvedores" style="-fx-background-color: #956cd9;" text="Busca">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #c18ec2;">
+                                 <children>
+                                    <GridPane prefHeight="344.0" prefWidth="600.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="141.59999237060546" minHeight="10.0" prefHeight="78.60000610351562" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="267.1999877929687" minHeight="30.0" prefHeight="264.79999389648435" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <StackPane fx:id="StackBuscaDesenvolvedores" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="279.0" prefWidth="700.0" GridPane.rowIndex="1">
+                                             <children>
+                                                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff0f9b" height="254.0" stroke="WHITE" strokeType="INSIDE" width="583.0" />
+                                                <Text fill="WHITE" layoutX="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite o ID do Desenvolvedor para realizar busca:" wrappingWidth="282.2754592895508" StackPane.alignment="CENTER_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="100.0" left="30.0" top="15.0" />
+                                                   </StackPane.margin>
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Text>
+                                                <TextField fx:id="TecladoBuscaIDDesenvolvedor" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="26.0" prefWidth="270.0" StackPane.alignment="CENTER_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="56.0" left="30.0" top="30.0" />
+                                                   </StackPane.margin>
+                                                </TextField>
+                                                <ImageView fitHeight="273.0" fitWidth="455.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="BOTTOM_RIGHT">
+                                                   <image>
+                                                      <Image url="@../../IMG/baixados__11_-removebg-preview%20(1).png" />
+                                                   </image>
+                                                   <StackPane.margin>
+                                                      <Insets right="9.0" />
+                                                   </StackPane.margin>
+                                                </ImageView>
+                                                <Text fx:id="BuscaErroDesenvolvedores" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="243.9999451637268" StackPane.alignment="BOTTOM_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="35.0" left="20.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                                <Button fx:id="BotaoRealizarBuscaDesenvolvedor" mnemonicParsing="false" onAction="#BuscaCadastroDesenvolvedores" style="-fx-background-color: #c18ec2;" text="Buscar" textFill="WHITE" StackPane.alignment="BOTTOM_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets bottom="85.0" left="130.0" />
+                                                   </StackPane.margin>
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Button>
+                                             </children>
+                                          </StackPane>
+                                          <StackPane fx:id="StackTopoDesenvolvedores4" prefHeight="150.0" prefWidth="200.0">
+                                             <children>
+                                                <Rectangle arcHeight="5.0" arcWidth="5.0" height="81.0" stroke="WHITE" strokeLineCap="ROUND" strokeType="INSIDE" width="413.0">
+                                                   <fill>
+                                                      <LinearGradient endX="1.0" endY="1.0" startX="0.28787878878188855">
+                                                         <stops>
+                                                            <Stop>
+                                                               <color>
+                                                                  <Color red="0.6947368383407593" green="0.2959064245223999" blue="0.6880896687507629" />
+                                                               </color>
+                                                            </Stop>
+                                                            <Stop offset="0.1945527590688881">
+                                                               <color>
+                                                                  <Color red="0.7568627595901489" green="0.5568627715110779" blue="0.7607843279838562" />
+                                                               </color>
+                                                            </Stop>
+                                                            <Stop offset="1.0">
+                                                               <color>
+                                                                  <Color red="1.0" green="0.05882352963089943" blue="0.6078431606292725" />
+                                                               </color>
+                                                            </Stop>
+                                                         </stops>
+                                                      </LinearGradient>
+                                                   </fill>
+                                                </Rectangle>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Busca de Desenvolvedores" wrappingWidth="269.3367399275303" StackPane.alignment="CENTER">
+                                                   <font>
+                                                      <Font name="Eras Bold ITC" size="20.0" />
+                                                   </font>
+                                                   <StackPane.margin>
+                                                      <Insets top="40.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Maximus Games" StackPane.alignment="TOP_CENTER">
+                                                   <font>
+                                                      <Font name="Jokerman" size="36.0" />
+                                                   </font>
+                                                   <StackPane.margin>
+                                                      <Insets bottom="35.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                             </children>
+                                          </StackPane>
+                                          <StackPane fx:id="StackRealizarBuscaDesenvolvedores" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="279.0" prefWidth="700.0" visible="false" GridPane.rowIndex="1">
+                                             <children>
+                                                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff0f9b" height="254.0" stroke="WHITE" strokeType="INSIDE" width="583.0" />
+                                                <TableView fx:id="TableBuscaDesenvolvedor" maxHeight="130.0" maxWidth="225.0" minHeight="150.0" prefHeight="201.0" prefWidth="450.0" style="-fx-background-color: #c18ec2;" StackPane.alignment="CENTER_LEFT">
+                                                   <columns>
+                                                      <TableColumn fx:id="TableBuscaIDDesenvolvedor" prefWidth="49.60003662109375" text="ID" />
+                                                      <TableColumn fx:id="TableBuscaNomeDesenvolvedor" prefWidth="83.199951171875" text="Nome" />
+                                                      <TableColumn fx:id="TableBuscaLocalDesenvolvedor" prefWidth="92.800048828125" text="Local" />
+                                                   </columns>
+                                                   <StackPane.margin>
+                                                      <Insets left="190.0" />
+                                                   </StackPane.margin>
+                                                </TableView>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Desenvolvedor" StackPane.alignment="TOP_LEFT">
+                                                   <font>
+                                                      <Font name="System Bold" size="16.0" />
+                                                   </font>
+                                                   <StackPane.margin>
+                                                      <Insets left="240.0" top="30.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                                <Button fx:id="BotaoNovaBuscaDesenvolvedores" mnemonicParsing="false" onAction="#NovaBuscaDesenvolvedores" style="-fx-background-color: #c18ec2;" text="Realizar outra busca" textFill="WHITE" StackPane.alignment="BOTTOM_CENTER">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                   <StackPane.margin>
+                                                      <Insets bottom="20.0" />
+                                                   </StackPane.margin>
+                                                </Button>
+                                             </children>
+                                          </StackPane>
+                                       </children>
+                                    </GridPane>
+                                 </children></AnchorPane>
+                           </content>
+                        </Tab>
+                     </tabs>
+                  </TabPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+  </tabs>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</TabPane>
